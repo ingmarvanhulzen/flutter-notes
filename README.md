@@ -19,4 +19,4 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Presentation buddy
 
-Checkout the [presentation](/ivhdevelopment/flutter-notes/tree/presentation) branch to start my presentation.
+Checkout the [presentation](https://github.com/ivhdevelopment/flutter-notes/tree/presentation) branch to start my presentation.
