@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:demo/pages/demo.dart';
-import 'package:intl/date_symbol_data_local.dart';
 
 void main() {
-  initializeDateFormatting('nl_NL', null);
   return runApp(MyApp());
 }
 

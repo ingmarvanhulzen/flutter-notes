@@ -1,0 +1,1256 @@
+[
+  {
+    "type": "openFile",
+    "path": "lib/pages/demo.dart"
+  },
+  {
+    "type": "goto",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "type": "command",
+    "command": "cursorEndSelect"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "    return CupertinoPageScaffold(",
+      "      child: Center(",
+      "        child: Text('CupertinoPageScaffold'),",
+      "      ),",
+      "    );"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "createFile",
+    "path": "lib/pages/notes.dart"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:flutter/cupertino.dart';",
+      "",
+      "class NotesPage extends StatelessWidget {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return CupertinoPageScaffold(",
+      "      child: Center(",
+      "        child: Text('NotesPage'),",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "createFile",
+    "path": "lib/pages/search.dart"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:flutter/cupertino.dart';",
+      "",
+      "class SearchPage extends StatelessWidget {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return CupertinoPageScaffold(",
+      "      child: Center(",
+      "        child: Text('SearchPage'),",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/demo.dart"
+  },
+  {
+    "type": "goto",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:demo/pages/notes.dart';",
+      "import 'package:demo/pages/search.dart';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 8,
+    "column": 1
+  },
+  {
+    "type": "command",
+    "command": "cursorBottomSelect"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "    return CupertinoPageScaffold(",
+      "      child: CupertinoTabScaffold(",
+      "        tabBar: CupertinoTabBar(",
+      "          items: const <BottomNavigationBarItem>[",
+      "            BottomNavigationBarItem(",
+      "              icon: Icon(IconData(0xe896, fontFamily: 'MaterialIcons')),",
+      "              title: Text('Notes'),",
+      "            ),",
+      "            BottomNavigationBarItem(",
+      "              icon: Icon(CupertinoIcons.search),",
+      "              title: Text('Search'),",
+      "            ),",
+      "          ],",
+      "        ),",
+      "        tabBuilder: (context, index) {",
+      "          switch (index) {",
+      "            case 0:",
+      "              return CupertinoTabView(builder: (context) {",
+      "                return CupertinoPageScaffold(",
+      "                  child: NotesPage(),",
+      "                );",
+      "              });",
+      "            case 1:",
+      "              return CupertinoTabView(builder: (context) {",
+      "                return CupertinoPageScaffold(",
+      "                  child: SearchPage(),",
+      "                );",
+      "              });",
+      "          }",
+      "        },",
+      "      ),",
+      "    );",
+      "  }",
+      "}",
+      ""
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/notes.dart"
+  },
+  {
+    "type": "goto",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "type": "command",
+    "command": "cursorBottomSelect"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "  Widget itemBuilder(BuildContext context, int index) {",
+      "    return Container(",
+      "      padding: EdgeInsets.all(16),",
+      "      child: Text('Notitie $index'),",
+      "    );",
+      "  }",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return CupertinoPageScaffold(",
+      "      child: SafeArea(",
+      "        top: false,",
+      "        bottom: true,",
+      "        child: CustomScrollView(",
+      "          slivers: <Widget>[",
+      "            CupertinoSliverNavigationBar(",
+      "              trailing: CupertinoButton(",
+      "                padding: EdgeInsets.zero,",
+      "                child: Icon(CupertinoIcons.create),",
+      "                onPressed: () {},",
+      "              ),",
+      "              largeTitle: Text('Notes'),",
+      "            ),",
+      "            SliverList(",
+      "              delegate: SliverChildBuilderDelegate(",
+      "                itemBuilder,",
+      "                childCount: 5,",
+      "              ),",
+      "            ),",
+      "          ],",
+      "        ),",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "createFile",
+    "path": "lib/pages/note.dart"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:flutter/cupertino.dart';",
+      "",
+      "class NotePage extends StatelessWidget {",
+      "  final TextEditingController _controller = TextEditingController();",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return CupertinoPageScaffold(",
+      "      navigationBar: CupertinoNavigationBar(",
+      "        middle: Text('Notes'),",
+      "      ),",
+      "      child: SafeArea(",
+      "        child: CupertinoTextField(",
+      "          controller: _controller,",
+      "          placeholder: 'Plaats hier je notitie.',",
+      "          padding: EdgeInsets.all(16),",
+      "          scrollPhysics: ClampingScrollPhysics(),",
+      "          decoration: BoxDecoration(",
+      "            border: Border.all(",
+      "              width: 0,",
+      "              color: CupertinoColors.white,",
+      "            ),",
+      "          ),",
+      "          textAlign: TextAlign.start,",
+      "          keyboardType: TextInputType.multiline,",
+      "          maxLines: null,",
+      "        ),",
+      "      ),",
+      "    );",
+      "  }",
+      "}"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/notes.dart"
+  },
+  {
+    "type": "goto",
+    "line": 23,
+    "column": 1
+  },
+  {
+    "type": "command",
+    "command": "cursorEndSelect"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "                onPressed: () {",
+      "                  Navigator.of(context).push(",
+      "                    CupertinoPageRoute(",
+      "                      builder: (BuildContext context) => NotePage(),",
+      "                    ),",
+      "                  );",
+      "                },"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:demo/pages/note.dart';",
+      ""
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "createFile",
+    "path": "lib/data/models.dart"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:uuid/uuid.dart';",
+      "",
+      "var uuidGenerator = new Uuid();",
+      "",
+      "class NoteModel {",
+      "  String uuid;",
+      "  String content;",
+      "  DateTime modified;",
+      "",
+      "  NoteModel({this.content = ''}) {",
+      "    this.uuid = uuidGenerator.v4();",
+      "    this.modified = DateTime.now();",
+      "  }",
+      "",
+      "  void update(String content) {",
+      "    this.content = content;",
+      "    this.modified = DateTime.now();",
+      "  }",
+      "}"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "createFile",
+    "path": "lib/data/schedule.dart"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:flutter/foundation.dart';",
+      "import 'package:demo/data/models.dart';",
+      "",
+      "class NotesSchedule with ChangeNotifier {",
+      "  List<NoteModel> _notes = [];",
+      "  List<NoteModel> get notes => _notes;",
+      "",
+      "  void add(NoteModel note) {",
+      "    _notes.add(note);",
+      "    notifyListeners();",
+      "  }",
+      "",
+      "  bool exists(String uuid) {",
+      "    return _notes.indexWhere((o) => o.uuid == uuid) != -1;",
+      "  }",
+      "",
+      "  void update(String uuid, String content) {",
+      "    _notes.firstWhere((o) => o.uuid == uuid).update(content);",
+      "    notifyListeners();",
+      "  }",
+      "",
+      "  void delete(String uuid) {",
+      "    _notes.removeWhere((o) => o.uuid == uuid);",
+      "    notifyListeners();",
+      "  }",
+      "}"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/demo.dart"
+  },
+  {
+    "type": "goto",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 4,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:provider/provider.dart';",
+      "import 'package:demo/data/schedule.dart';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 10,
+    "column": 12
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "ChangeNotifierProvider(",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 11,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "      builder: (BuildContext context) => NotesSchedule(),",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 12,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "      child: "
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 42,
+    "column": 12
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "),"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/notes.dart"
+  },
+  {
+    "type": "goto",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:provider/provider.dart';",
+      "import 'package:demo/data/schedule.dart';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 16,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 16,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "    final _schedule = Provider.of<NotesSchedule>(context);",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 41,
+    "column": 29
+  },
+  {
+    "type": "command",
+    "command": "cursorEndSelect"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "_schedule.notes.length,"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/note.dart"
+  },
+  {
+    "type": "goto",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 2,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:demo/data/models.dart';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "  final NoteModel note;",
+      "",
+      "  NotePage({this.note}) {",
+      "    _controller.text = note.content;",
+      "  }"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/note.dart"
+  },
+  {
+    "type": "goto",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:demo/data/schedule.dart';",
+      "import 'package:provider/provider.dart';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 16,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 16,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "    final _schedule = Provider.of<NotesSchedule>(context);"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 24,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 24,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "          onChanged: (String content) {",
+      "            if (_schedule.exists(note.uuid)) {",
+      "              _schedule.update(note.uuid, content);",
+      "            } else {",
+      "              note.content = content;",
+      "              _schedule.add(note);",
+      "            }",
+      "          },"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/notes.dart"
+  },
+  {
+    "type": "goto",
+    "line": 5,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 5,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:demo/data/models.dart';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 32,
+    "column": 67
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "note: NoteModel()"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/main.dart"
+  },
+  {
+    "type": "goto",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:intl/date_symbol_data_local.dart';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "  initializeDateFormatting('nl_NL', null);"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/notes.dart"
+  },
+  {
+    "type": "goto",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 6,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:intl/intl.dart';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 10,
+    "column": 1
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "command",
+    "command": "cursorDownSelect"
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 10,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "    final _schedule = Provider.of<NotesSchedule>(context);",
+      "    final _note = _schedule.notes[index];",
+      "    ",
+      "    return GestureDetector(",
+      "      child: Container(",
+      "        padding: EdgeInsets.all(16),",
+      "        child: Column(",
+      "          crossAxisAlignment: CrossAxisAlignment.start,",
+      "          children: <Widget>[",
+      "            Text(",
+      "              _note.content,",
+      "              overflow: TextOverflow.ellipsis,",
+      "              maxLines: 1,",
+      "            ),",
+      "            Text(",
+      "              DateFormat(\"EEEE dd MMMM yyyy 'om' HH:mm\", 'nl_NL').format(_note.modified),",
+      "              style: TextStyle(",
+      "                color: CupertinoColors.lightBackgroundGray,",
+      "                fontSize: 14,",
+      "              ),",
+      "            ),",
+      "          ],",
+      "        ),",
+      "      ),",
+      "      onTap: () {",
+      "        Navigator.of(context).push(CupertinoPageRoute(",
+      "          builder: (BuildContext context) => NotePage(note: _note),",
+      "        ));",
+      "      },",
+      "    );"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/pages/notes.dart"
+  },
+  {
+    "type": "goto",
+    "line": 13,
+    "column": 12
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "Dismissible(",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 14,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "      key: Key(_note.uuid),",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 15,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "      onDismissed: (direction) {",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 16,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "        _schedule.delete(_note.uuid);",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 17,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "      },",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 18,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "      child: "
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 45,
+    "column": 6
+  },
+  {
+    "type": "typeText",
+    "text": [
+      ",)"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/data/models.dart"
+  },
+  {
+    "type": "goto",
+    "line": 19,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 20,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "  NoteModel.fromJson(Map<String, dynamic> json)",
+      "      : uuid = json['uuid'],",
+      "        content = json['content'],",
+      "        modified = DateTime.parse(json['modified']);",
+      "",
+      "  Map<String, dynamic> toJson() => {",
+      "        'uuid': uuid,",
+      "        'content': content,",
+      "        'modified': modified.toIso8601String(),",
+      "      };"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "type": "wait",
+    "delay": "manual"
+  },
+  {
+    "type": "openFile",
+    "path": "lib/data/schedule.dart"
+  },
+  {
+    "type": "goto",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 3,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "import 'package:shared_preferences/shared_preferences.dart';",
+      "import 'dart:convert';"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 7,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 7,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "  bool _loading = true;",
+      "  bool get loading => _loading;"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 31,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 32,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "  saveToPreferences(List<NoteModel> notes) async {",
+      "    final SharedPreferences prefs = await SharedPreferences.getInstance();",
+      "    final json = jsonEncode(notes);",
+      "",
+      "    prefs.setString('notes', json);",
+      "  }",
+      "",
+      "  getFromPreferences() async {",
+      "    final SharedPreferences prefs = await SharedPreferences.getInstance();",
+      "    final String json = prefs.getString('notes') ?? '';",
+      "",
+      "    if (json != '') {",
+      "      final List list = jsonDecode(json);",
+      "      final notes =",
+      "          List<NoteModel>.from(list.map((map) => NoteModel.fromJson(map)));",
+      "      _notes = notes;",
+      "    }",
+      "",
+      "    _loading = false;",
+      "    notifyListeners();",
+      "  }"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 13,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 13,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "  NotesSchedule() : super() {",
+      "    getFromPreferences();",
+      "  }"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 20,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 20,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "    saveToPreferences(_notes);"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 30,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 30,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "    saveToPreferences(_notes);"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 36,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 36,
+    "column": 1
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "    saveToPreferences(_notes);"
+    ]
+  },
+  {
+    "type": "command",
+    "command": "workbench.action.files.save"
+  }
+]

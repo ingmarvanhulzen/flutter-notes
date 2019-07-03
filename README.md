@@ -1,22 +1,19 @@
 # Flutter notes
 
-## Project
+## Steps
 
-I have made this simple Flutter Notes app for a presentation at work. And to learn Flutter in general.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
-
-## Presentation buddy
-
-Checkout the [presentation](/ivhdevelopment/flutter-notes/tree/presentation) branch to start my presentation.
+1. CupertinoScaffold
+2. NotesPagina en SearchPagina
+3. Koppelen door middel van Tabbar
+4. Notes pagina uitbreiden met ZilverNaviagationBar en ZilverList
+5. Detail pagina en koppelen aan maak nieuwe notitie
+6. Toevoegen van DataModel en scheduler
+7. ChangeProvider toevoegen aan demo
+8. Lijst opbouwen van uit data model
+9. Notitie toevoegen aan edit scherm
+10. Notitie updaten of aanmaken
+11. Notitie initieel mee geven aan route
+12. Intl toevoegen aan main (Restart)
+13. Lijst item uitbreiden met laatst gewijzigd en bewerken
+14. Lijst item uitbreiden om te verwijderen
+15. Notities opslaan op telefoon
