@@ -1,5 +1,11 @@
 # Flutter notes
 
+## How does it work
+
+First you need to install [Presentation buddy](https://marketplace.visualstudio.com/items?itemName=mauricedebeijer.presentation-buddy) in your Visual Studio Code.
+
+Than go to the root directory and start the presentation by calling ```Presentation Buddy: Start```. I have put alot of wait points in the presentation just run ```Presentation Buddy: Continue``` to initialize the next step.
+
 ## Steps
 
 1. CupertinoScaffold
